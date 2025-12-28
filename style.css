@@ -1,0 +1,42 @@
+body {
+    background-color: #a14141;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0px;
+}
+
+.eyeshadow {
+    width: 300px;
+    height: 230px;
+    top: 50%;
+    left: 50%;
+    background: #0d0d0d;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(ellipse,rgba(13, 13, 13, 0.97) 0%, rgba(13, 13, 13, 0.90) 20%, rgba(11, 11, 11, 0.5) 40%,  rgba(11, 11, 11, 0.1) 50%,  rgba(11, 11, 11, 0) 60%); 
+    position: absolute;
+    z-index: -1;
+}
+
+.eye {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 100% 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.ball {
+    width: 55px;
+    height: 55px;
+    background-color: #000000;
+    border-radius: 50%;
+    position: absolute;
+    top: 0%;
+    left: 10%;
+    transition: all 0.1s ease;
+}
