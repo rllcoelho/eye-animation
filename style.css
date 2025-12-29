@@ -3,40 +3,62 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 .eyeshadow {
     width: 300px;
     height: 230px;
-    top: 50%;
-    left: 50%;
-    background: #0d0d0d;
-    transform: translate(-50%, -50%);
     background: radial-gradient(ellipse,rgba(13, 13, 13, 0.97) 0%, rgba(13, 13, 13, 0.90) 20%, rgba(11, 11, 11, 0.5) 40%,  rgba(11, 11, 11, 0.1) 50%,  rgba(11, 11, 11, 0) 60%); 
-    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
     z-index: -1;
 }
 
 .eye {
-    width: 100px;
-    height: 100px;
-    background-color: white;
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
     border-radius: 100% 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(45deg);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    rotate: 45deg;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
     overflow: hidden;
 }
 
 .ball {
-    width: 55px;
-    height: 55px;
+    width: 50px;
+    height: 50px;
     background-color: #000000;
     border-radius: 50%;
-    position: absolute;
-    top: 0%;
-    left: 10%;
     transition: all 0.1s ease;
+    position: relative;
+    left: 5px;
+    top: 5px;
+}
+
+.lid {
+    width: 120px;
+    height: 80px;
+    rotate: -45deg;
+    position: absolute;
+    left: -20px;
+    z-index: 999;
+}
+
+.lid span {
+    display: block;
+    width: 100%;
+    height: 30%;
+    background: #582222;;
+    border-radius: 0 0 60% 60%;
+    transition: 0.4s all;
+}
+
+.eye:hover .lid span {
+    height: 100%;
 }
