@@ -16,14 +16,18 @@ body {
     margin: 100px auto;
 }
 
-.eyeshadow {
-    width: 300px;
-    height: 230px;
-    background: radial-gradient(ellipse,rgba(13, 13, 13, 0.97) 0%, rgba(13, 13, 13, 0.90) 20%, rgba(11, 11, 11, 0.5) 40%,  rgba(11, 11, 11, 0.1) 50%,  rgba(11, 11, 11, 0) 60%); 
+.eye {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+}
+
+.eyeshadow {
+    width: 300px;
+    height: 230px;
+    background: radial-gradient(ellipse,rgba(13, 13, 13, 0.97) 0%, rgba(13, 13, 13, 0.90) 20%, rgba(11, 11, 11, 0.5) 40%,  rgba(11, 11, 11, 0.1) 50%,  rgba(11, 11, 11, 0) 60%); 
+    
     z-index: -1;
 }
 
@@ -32,7 +36,7 @@ body {
     height: 80px;
     background-color: #fff;
     border-radius: 100% 0;
-    rotate: 45deg;
+    rotate: -135deg;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
     overflow: hidden;
 }
@@ -47,6 +51,13 @@ body {
     left: 5px;
     top: 5px;
 }
+
+/* .eyeball:hover > .pupil {
+    left: 5px;
+    top: 5px;
+    width: 400px;
+    height: 400px;
+} */
 
 .eyelid {
     width: 120px;
